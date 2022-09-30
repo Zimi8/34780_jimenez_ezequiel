@@ -1,43 +1,21 @@
-// navBar 
-
-/* seccion header 
-
- <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            JoGeek
-          </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-
-
-*/ 
-/*NAVBAR A en Sí items lists
- <div class="nav-links">
-        <a href="//github.io/jo_geek"   >Github</a>
-        <a href="http://stackoverflow.com/users/4084003/"   >Stackoverflow</a>
-        <a href="https://in.linkedin.com/in/jonesvinothjoseph"   >LinkedIn</a>
-        <a href="https://codepen.io/jo_Geek/"   >Codepen</a>
-        <a href="https://jsfiddle.net/user/jo_Geek/"   >JsFiddle</a>
-    </div>
-    </div>*/ 
+import CartWidgets from '../cartWidget/cartWidget'
 import './navBar.css'
 const NavBar = () => {
     return (  
-        <div class="nav-links">
-        <a href="//github.io/jo_geek"   >Github</a>
-        <a href="http://stackoverflow.com/users/4084003/"   >Stackoverflow</a>
-        <a href="https://in.linkedin.com/in/jonesvinothjoseph"   >LinkedIn</a>
-        <a href="https://codepen.io/jo_Geek/"   >Codepen</a>
-        <a href="https://jsfiddle.net/user/jo_Geek/"   >JsFiddle</a>
-    </div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+              <button className="margin nav-item nav-link active">Principal</button>
+              <button className="margin nav-item nav-link">Productos Annah</button>
+              <button className="margin nav-item nav-link">Historia</button>
+              <button className="margin nav-item nav-link">Cotizá</button>
+          </div>
+      </div>
+      <CartWidgets/>
+    </nav >
     )
 }
 

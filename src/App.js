@@ -1,14 +1,17 @@
+import './App.css';
 import React from 'react' ;
 import logo from './logo.svg';
-import './App.css';
+
 import NavBar from './crearcomponentes/navbarjsxx/navBarJSX';
+import ItemListContainer from './crearcomponentes/itemListContainer/itemListContainer';
 function App() {
   return (
    
     <div className="App">
          
         <NavBar/>
-
+        <NavBar />
+      <ItemListContainer greeting={'Annah Deco Design'} />
     </div>
      
   );
